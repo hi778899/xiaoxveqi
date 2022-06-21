@@ -1,0 +1,123 @@
+<!DOCTYPE html >
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/index.css">
+<title>机房动力环境监控报警系统</title>
+</head>
+<body class="body_after">
+  <!-- 页头 -->
+  <div class="header">
+    <div>
+      <div>
+        <h1>机房动力环境监控报警系统</h1>
+      </div>
+      <div id="ConnectState">数据服务连接中...</div>
+    </div>
+  </div>
+  <!-- 页中 -->
+<div class="main">
+  <table class="cover">
+    <tr>
+        <td>
+          <div class="tile-block-1 cover-color1">
+            <i class="iconfont setup">&#xe641;</i>
+            <span >当前温度：</span>
+            <span id="currenttmp">--℃</span>
+          </div>
+        </td>
+        <td>
+          <div class="tile-block-1 cover-color4">
+            <span >当前湿度：</span>
+            <span id="currenthum">--℃</span>
+          </div>
+        </td>
+        <td>
+          <div class="tile-block-1 cover-color7">
+            <span >当前气压：</span>
+            <span id="currentatm">--℃</span>
+          </div>
+        </td>
+        <td>
+          <div class="tile-block-1 cover-color3">
+            <span >当前空气质量：</span>
+            <span id="currentair">--℃</span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="tile-block-1 cover-color6">
+            <span >当前用电量：</span>
+            <span id="currentepc">--℃</span>
+          </div>
+        </td>
+        <td>
+          <div class="tile-block-1 cover-color5">
+            <span >当前电压：</span>
+            <span id="currentUnum">--℃</span>
+          </div>
+        </td>
+        <td>
+          <div class="tile-block-1 cover-color8 ">
+            <span >当前电流：</span>
+            <span id="currentI">--℃</span>
+          </div>
+        </td>
+        <td>
+          <div class="tile-block-1 cover-color2">
+            <span >当前功率：</span>
+            <span id="currentPWR">--℃</span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="tile-block-1 cover-color7">
+            <div>空调开关1：</div>
+            <img id="btn_kt1" src="images/an-off.png" alt=""/>
+          </div>
+        </td>
+        <td>
+          <div class="tile-block-1 cover-color1">
+            <div>空调开关2：</div>
+            <img id="btn_kt2" src="images/an-off.png" alt=""/>
+          </div>
+        </td>
+        <td>
+          <div class="tile-block-1 cover-color4">
+            <div>风扇开关：</div>
+            <img id="btn_fs" src="images/an-off.png" alt=""/>
+          </div>
+        </td>
+        <td>
+          <div class="tile-block-1 cover-color9">
+            <div>烟雾报警开关：</div>
+            <img id="btn_yw" src="images/an-off.png" alt=""/>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="tile-block-1 cover-color6">
+            <div>消防水泵开关：</div>
+            <img id="btn_sb" src="images/an-off.png" alt=""/>
+          </div>
+        </td>
+        <td>
+          <div class="tile-block-1 cover-color5">
+            <div>柴油发电机开关：</div>
+            <img id="btn_fdj" src="images/an-off.png" alt=""/>
+          </div>
+        </td>    
+      </tr>
+    </table>
+  </div>
+  <!--引入js-->
+  <script  src="js/jquery-1.11.0.min.js"></script>
+  <script  src="js/highcharts.js"></script>
+  <script  src="js/WSN/WSNRTConnect.js"></script>
+  <script  src="js/script.js"></script>
+</body>
+</html>
